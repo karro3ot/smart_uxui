@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* base_code_layout_02.css */
+
+/* reset ================================================================= */
+html, body, 
+h1,h2,h3,h4,h5,h6,
+hr {margin:0; padding:0; border:0; behavior:url(../ie/PIE/PIE.htc);}
+header, nav, main, footer, article, section, aside {display:block;}
+
+/* design ================================================================ */
+
+#box{width:960px; height:1200px;}
+
+#headBox {width:960px; height:120px; background-color:#f0a;}
+#viewBox {width:960px; height:450px; background-color:#fa0;}
+#contentBox {width:960px; height:500px; background-color:#0cf;}
+
+.con_wrap {float:left; width:200px; height:500px; background-color:#0af;} 
+.lnb_list {float:left; width:760px; height:200px; background-color:#af7;}
+.lnb_content {float:left; width:760px; height:300px; background-color:#ac9;}
+
+.lnb_cont_01 {float:left; width:380px; height:300px; background-color:#ca0;}
+.lnb_cont_02 {float:left; width:380px; height:300px; background-color:#f72}
+
+#footBox {width:960px; height:130px; background-color:#777}
+
