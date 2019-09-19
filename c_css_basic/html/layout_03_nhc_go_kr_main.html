@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/reset_test.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../css/layout_03_nhc_go_kr.css">
 
     <!--[if lte IE 9]>
@@ -24,6 +25,14 @@
           <h1>천연기념물센터</h1>
           <nav id="gnb">
             <h2 class="hidden">웹페이지 전체 네비게이션 영역</h2>
+            <ul>
+              <li><a href="#">관람정보</a></li>
+              <li><a href="#">전시</a></li>
+              <li><a href="#">교육.행사</a></li>
+              <li><a href="#">소식.참여</a></li>
+              <li><a href="#">자료실</a></li>
+              <li><a href="#">센터소개</a></li>
+            </ul>
           </nav>
           <!-- _____________________________________________ -->
           <aside class="site_map">
@@ -33,6 +42,13 @@
         <div class="unb_area clearfix">
           <nav class="unb">
             <h2 class="hidden">사용자 편의용 네비게이션 영역</h2>
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+                <span class="hidden">facebook 페이지 이동하기</span>
+              </a>
+            </div>
+            <ul class="unb_list"></ul>
           </nav>
         </div>
       </header>
@@ -52,11 +68,59 @@
 
         <section class="view_area" id="view">
           <h3 class="hidden">광고영역</h3>
+          <nav class="indicator float_btn">
+            <h4 class="hidden">광고 전체 내용 요약</h4>
+            <ul>
+              <li><a href="#">식물전시존</a></li>
+              <li><a href="#">동물전시존</a></li>
+              <li><a href="#">지질전시존</a></li>
+              <li><a href="#">천연보호구역</a></li>
+              <li><a href="#">명승전시존</a></li>
+              <li><a href="#">한반도의 자연유산</a></li>
+            </ul>
+          </nav>
+          <div class="next_btn arrow_btn"><button type="button">
+            <i class="fas fa-chevron-right"></i><span class=hidden>다음 광고 내용보기</span></button></div>
+          <div class="prev_btn arrow_btn"><button type="button">
+            <i class="fas fa-chevron-left"></i><span class=hidden>이전 광고 내용보기</span></button></div>
+
+          <article class="view_zone">
+            <h4 class="hidden">식물전시존</h4>
+            <p>
+              오랜 역사를 간직한 노거수가 있는<br />
+              <em>식물전시존</em>
+            </p>
+          </article>
         </section><!-- // .view_area ================================ -->
         
         <article class="news_area con_area" id="news">
           <h3>센터 소식</h3>
-          <div class="content"></div>
+          <div class="content">
+            <div class="center_info">
+              <h4 class="hidden">공지사항 및 확인사항</h4>
+
+              <div class="info_board_01">공지사항</div>
+
+              <div class="info_board_02">
+                <div class="title_zone">
+                  <h5>퀵링크</h5>
+                </div>
+                <div class="content_zone"></div>
+              </div>
+
+              <div class="info_board_03">
+                <div class="title_zone">
+                  <h5>팝업존</h5>
+                  <div class="popup_indicator"></div>
+                </div>
+                <div class="content_zone"></div>
+              </div>
+            </div>
+            <div class="program_guide">
+              <h4 class="hidden">프로그램 안내 서비스</h4>
+
+            </div>
+          </div>
         </article><!-- // .news_area ================================ -->
 
         <article class="media_area con_area" id="media">
@@ -68,7 +132,26 @@
         <aside class="counter_area con_area" id="counter">
           <h3>숫자로 보는 천연기념물</h3>
           <p>천연기념물 중에 궁금한 사항을 알기쉽게 숫자로 알아볼 수 있습니다.</p>
-          <div class="content"></div>
+          <div class="content">
+            <ul>
+              <li>
+                <div class="gage"></div>
+                <dl>
+                  <dt>요기는 제목</dt>
+                  <dd>요기는 내용작성</dd>
+                </dl>
+              </li>
+              <li>
+                <!-- .gage+(dl>(dt+dd)) -->
+              </li>
+              <li>
+                <!-- .gage+(dl>(dt+dd)) -->
+              </li>
+              <li>
+                <!-- .gage+(dl>(dt+dd)) -->
+              </li>
+            </ul>
+          </div>
         </aside><!-- // .counter_area ================================ -->
 
         <div class="top_button">
