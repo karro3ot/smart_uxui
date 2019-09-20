@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/reset_test.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="../css/test.css">
 
     <!--[if lte IE 9]>
@@ -18,12 +20,20 @@
   </head>
   <body>
   <!-- layout ==================================================== -->
-    <div class="wrap">
+    <div id="wrap">
       <header id="headBox">
         <div class="banner_area">
           <h1>천연기념물센터</h1>
           <nav id="gnb">
             <h2 class="hidden">웹 전체 네비게이션</h2>
+            <ul>
+              <li><a href="#">관람정보</a></li>
+              <li><a href="#">전시</a></li>
+              <li><a href="#">교육.행사</a></li>
+              <li><a href="#">소식.참여</a></li>
+              <li><a href="#">자료실</a></li>
+              <li><a href="#">센터소개</a></li>
+            </ul>
           </nav>
           <aside class="site_map">
             <h2 class="hidden">추가 네비게이션</h2>
@@ -32,27 +42,146 @@
         <div class="unb_area">
           <nav class="unb">
             <h2 class="hidden">사용자 편의 네비게이션</h2>
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+                <span class="hidden">facebook 페이지 이동하기</span>
+              </a>
+            </div>
+            <ul class="unb_list"></ul>
           </nav>
         </div>
       </header>
 
       <main id="conBox">
-        <div class="view_area" id="#view">
+        <h2 class="hidden">기념물 센터 상세 내용</h2>
+        <!-- ______________________________________ -->
+        <aside class="page_scroll">
+          <h3 class="hidden">각 위치별 안내 설명</h3>
+          <ul>
+            <li><a href="#view"><span class="hidden">광고영역</span></a></li>
+            <li><a href="news"><span class="hidden">센터소식</span></a></li>
+            <li><a href="media"><span class="hidden">전시관 동영상</span></a></li>
+            <li><a href="counter"><span class="hidden">숫자로 보는 천연기념물</span></a></li>
+          </ul>
+        </aside>
+
+        <section class="view_area" id="view">
           <h3 class="hidden">광고영역</h3>
-        </div>
+          <nav class="indicator float_btn">
+            <h4 class="hidden">광고 전체 내용 요약</h4>
+            <ul>
+              <li><a href="#">식물전시존</a></li>
+              <li><a href="#">동물전시존</a></li>
+              <li><a href="#">지질전시존</a></li>
+              <li><a href="#">천연보호구역</a></li>
+              <li><a href="#">명승전시존</a></li>
+              <li><a href="#">한반도의 자연유산</a></li>
+            </ul>
+          </nav>
+          <div class="next_btn arrow_btn"><button type="button">
+              <i class="fas fa-chevron-right"></i><span class=hidden>다음 광고 내용보기</span></button></div>
+            <div class="prev_btn arrow_btn"><button type="button">
+              <i class="fas fa-chevron-left"></i><span class=hidden>이전 광고 내용보기</span></button></div>
+  
+            <article class="view_zone">
+              <h4 class="hidden">식물전시존</h4>
+              <p>
+                오랜 역사를 간직한 노거수가 있는<br />
+                <em>식물전시존</em>
+              </p>
+            </article>
+        </section>
 
-        <div class="news_area con_area" id="#news">
+        <div class="news_area con_area" id="news">
           <h3>센터 소식</h3>
-          <div class="content"></div>
+          <div class="content">
+            <div class="center_info">
+            <h4 class="hidden">공지사항 및 확인사항 안내</h4>
+    <!-- ************************************************************* -->
+            <div class="info_board_01">
+              <h5 class="action">공지사항</h5>
+              <div class="info_01_con con_01 action">
+                <!-- 공지사항 내용 -->
+                <ul>
+                  <li>
+                    <p>2019-09<br /><span class="big">16</span></p>
+                    <dl>
+                      <dt>[제목] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, tempora.
+                      </dt>
+                      <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, ipsam!</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <p>2019-08<br /><span>28</span></p>
+                    <dl>
+                      <dt>[제목] Lorem ipsum dolor sit amet.</dt>
+                      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, saepe?</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <p>2019-07<br /><span>05</span></p>
+                    <dl>
+                      <dt>[제목] Lorem ipsum dolor sit amet.</dt>
+                      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, praesentium!</dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+    
+              <!-- ++++++++++++++++++ -->
+              <h5>보도자료</h5>
+              <div class="info_01_con con_02">보도자료 내용</div>
+          </div>
+          <div class="info_board_02">
+              <div class="title_zone">
+                <h5>퀵링크</h5>
+              </div>
+
+              <div class="content_zone"></div>
+            </div>
+
+            <div class="info_board_03">
+              <div class="title_zone">
+                <h5>팝업존</h5>
+                <div class="popup_indicator"></div>
+              </div>
+              <div class="content_zone"></div>
+            </div>
+          </div>
+          <div class="program_guide float_btn">
+            <h4 class="hidden">프로그램 안내 서비스</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="icon">
+                  <!-- wai-aria -->
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                  </div>
+                  <dl>
+                    <dt>단체관람예약</dt>
+                    <dd>관람인원이 10인 이상인 경우<br />
+                      단체관람 예약을 운영하고 있습니다.</dd>
+                  </dl>
+                </a>
+              </li>
+
+              <li><a href="#"><span class="hidden"></span></a></li>
+              <li><a href="#"><span class="hidden"></span></a></li>
+              <li><a href="#"><span class="hidden"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
         </div>
 
-        <div class="media_area con_area" id="#media">
+        <div class="media_area con_area" id="media">
           <h3>전시관<abbr title="virture reality">VR</abbr></h3>
           <p>천연기념물센터 전시관을 VR로 감상하실 수 있습니다.</p>
           <div class="media"></div>
         </div>
 
-        <div class="counter_area con_area" id="#counter">
+        <div class="counter_area con_area" id="counter">
           <h3>숫자로 보는 천연기념물</h3>
           <p>천연기념물중에 궁금한 사항을 알기쉽게 숫자로 알아볼 수 있습니다.</p>
           <div class="content"></div>

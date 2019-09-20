@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/reset_test.css">
     <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="../css/layout_03_nhc_go_kr.css">
 
     <!--[if lte IE 9]>
@@ -91,20 +92,54 @@
               <em>식물전시존</em>
             </p>
           </article>
-        </section><!-- // .view_area ================================ -->
+        </section><!-- // .view_area ============================== -->
         
         <article class="news_area con_area" id="news">
           <h3>센터 소식</h3>
           <div class="content">
             <div class="center_info">
-              <h4 class="hidden">공지사항 및 확인사항</h4>
+              <h4 class="hidden">공지사항 및 확인사항 안내</h4>
+<!-- ************************************************************* -->
+              <div class="info_board_01">
+                <h5 class="action">공지사항</h5>
+                <div class="info_01_con con_01 action">
+                  <!-- 공지사항 내용 -->
+                  <ul>
+                    <li>
+                      <p>2019-09<br /><span class="big">16</span></p>
+                      <dl>
+                        <dt>[제목] Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, tempora.
+                        </dt>
+                        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, ipsam!</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <p>2019-08<br /><span>28</span></p>
+                      <dl>
+                        <dt>[제목] Lorem ipsum dolor sit amet.</dt>
+                        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, saepe?</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <p>2019-07<br /><span>05</span></p>
+                      <dl>
+                        <dt>[제목] Lorem ipsum dolor sit amet.</dt>
+                        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, praesentium!</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="info_board_01">공지사항</div>
-
+                <!-- ++++++++++++++++++ -->
+                <h5>보도자료</h5>
+                <div class="info_01_con con_02">보도자료 내용</div>
+              </div>
+<!-- ************************************************************* -->
               <div class="info_board_02">
                 <div class="title_zone">
                   <h5>퀵링크</h5>
                 </div>
+
                 <div class="content_zone"></div>
               </div>
 
@@ -116,18 +151,36 @@
                 <div class="content_zone"></div>
               </div>
             </div>
-            <div class="program_guide">
+            <div class="program_guide float_btn">
               <h4 class="hidden">프로그램 안내 서비스</h4>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                    <!-- wai-aria -->
+                      <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <dl>
+                      <dt>단체관람예약</dt>
+                      <dd>관람인원이 10인 이상인 경우<br />
+                        단체관람 예약을 운영하고 있습니다.</dd>
+                    </dl>
+                  </a>
+                </li>
 
+                <li><a href="#"><span class="hidden"></span></a></li>
+                <li><a href="#"><span class="hidden"></span></a></li>
+                <li><a href="#"><span class="hidden"></span></a></li>
+              </ul>
             </div>
           </div>
-        </article><!-- // .news_area ================================ -->
+        </article><!-- // .news_area ============================== -->
 
         <article class="media_area con_area" id="media">
           <h3>전시관<abbr title="virture reality">VR</abbr></h3>
           <p>천연기념물센터 전시관을 VR로 감상하실 수 있습니다.</p>
           <div class="media"></div>
-        </article><!-- // .media_area ================================ -->
+        </article><!-- // .media_area ============================= -->
 
         <aside class="counter_area con_area" id="counter">
           <h3>숫자로 보는 천연기념물</h3>
@@ -152,7 +205,7 @@
               </li>
             </ul>
           </div>
-        </aside><!-- // .counter_area ================================ -->
+        </aside><!-- // .counter_area ============================= -->
 
         <div class="top_button">
           <a href="#headBox"><span class="hidden">화면 상단으로 이동</span></a>
@@ -165,6 +218,23 @@
         </div>
       </footer>
     </div>
-  <!-- layout =========================================== -->
+  <!-- script =========================================== -->
+  <script src="http://unpkg.con/jquery"></script>
+  <script>
+    (fuction($){
+      var ib_01 = $('.info_board_01');
+      var ibTitle = ib_01.children('h5');
+      var ib_con = $('.info_01_con');
+
+      ibTitle.on('click', function(e){
+        e.preventDefault();
+        
+        $(this).addClass('action');
+        $(this).siblings(ibTitle).removeClass('action');
+        ib_con.removeClas('action');
+        $(this).next(ib_con).addClass('action');
+      });
+    })(jQuery);
+  </script>
   </body>
 </html>
