@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* rwd_test_01.css */
+
+#wrap {width:100%; height:auto;}
+
+#headBox > h1 {float:left; width:6.25rem; height:6.25rem; background-color:#cfc;}
+#headBox > h2 {float:left; width:53.75rem; height:6.25rem; background-color:#fdc;}
+
+#contentBox > h2 {width:60rem; height:28.13rem; background-color:#cdf;}
+#contentBox > ul {width:60rem; height:auto;}
+#contentBox>.con_01 > ul:after {content:""; display: block; clear: both;}
+
+.li_01 {float:left; width:15rem; height:37.5rem; background-color:#ada;}
+.li_02 {float:left; width:15rem; height:37.5rem; background-color:#dcd;}
+.li_03 {float:left; width:15rem; height:37.5rem; background-color:#ada;}
+.li_04 {float:left; width:15rem; height:37.5rem; background-color:#dcd;}
+
+#footBox > h2 {float:left; width:6.25rem; height:6.25rem; background-color:#5af;}
+.foot_01 {float:left; width:53.75rem; height:6.25rem; background-color:#ecd;}
