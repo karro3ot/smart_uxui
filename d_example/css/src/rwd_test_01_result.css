@@ -4,6 +4,9 @@
   * pc : 769px ~ 960px
   * tablet : 481px ~ 768px
   * mobile : ~ 480px
+
+  * vw 높이 계산방법 : 기준이 되는 크기에서 (높이값 / 기준가로값 * 100) vw
+  * vw 높이 설정시 : min-height, max-height 사용 여부를 판단할 것.
 **/
 
 #wrap {width:100%; max-width:60rem; height:auto; background-color:#fd4;}
@@ -13,7 +16,12 @@ h1 {width:6.25rem; height:9.375rem; background-color:#8f8; transition:all 200ms 
 .menu_btn > button {width:100%; height:100%; background-color:#fff;}
 
 #contentBox {width:100%; height:auto;}
- #viewBox {width:100%; height:28.125rem; background-color:#fdd;}
+ #viewBox {position:relative; left:50%; margin-left:-50vw; width:100vw; height:46.875vw; max-height:28.125rem; background-color:#fdd;
+ /* background-image:url("../../img/london.jpg");
+ background-repeat:no-repeat;
+ background-position:50% 50%;
+ background-size:cover; */}
+
  #listBox {width:100%; height:auto; background-color:#765;}
   #listBox > ul {width:inherit; height:inherit;}
   #listBox > ul > li {float:left; width:25%; height:37.5rem;}
@@ -31,7 +39,7 @@ h1 {width:6.25rem; height:9.375rem; background-color:#8f8; transition:all 200ms 
 /* 768 =========================================================== */
 @media screen and (min-width:481px) and (max-width:768px) {
   #contentBox {height:auto;}
-   #viewBox {height:18.75rem;}
+   #viewBox {height:39.0625vw; max-height:18.75rem;}
    #listBox > ul > li {height:25rem;}
    #infoBox {display:block;}
 }
