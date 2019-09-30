@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* gcass.css */
+
+
+#wrap {position:relative; width:980px; height:auto; padding-top: 30px;}
+#headBox {float:left; width:15.5625rem; height:44.3125rem; background-color:#ccf;}
+#headBox > h1 {margin:auto; width:9.75rem; height:7rem; text-align:center;}
+#headBox > h1 a {color:#fff;}
+#headBox > ul {}
+
+#subBox {position:absolute; top:0; right:0; width:100%; height:1.875rem; background-color:#ffd;}
+#subBox>.sub_area{float:right; width: auto; height: 30px;}
+#subBox  .home {float:left; width:6rem; height:1.875rem; background-color:#dcd; text-align:center;}
+#subBox  .study {float:left; width:6rem; height:1.875rem; background-color:#dca; text-align:center;}
+#subBox  .education {float:left; width:15.3125rem; height:1.875rem; background-color:#daa; text-align:center;}
+
+
+#contentBox {float:left; width:45.6875rem; height:44.3125rem; background-color:#cfd;}
+
+#footBox {float:left; width:61.25rem; height:6.9375rem; background-color:#fdd;}
