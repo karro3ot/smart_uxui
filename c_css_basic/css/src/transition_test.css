@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* transition_test */
+
+#contentBox {width:100%; height:auto; padding:15px; margin-left:35px;}
+.box > ul > li {float:left; margin:10px; padding:15px; box-sizing:border-box; width:50px; height:50px; background-color:#555; border-radius:15px; text-align:center; color:#fff;}
+
+.box li {transition:all 300ms linear;}
+
+.box li:nth-child(1):hover {transform:rotate(45deg);}
+.box li:nth-child(2):hover {transform:translate3D(0, -30px, -30px);}
+.box li:nth-child(3):hover {transform:perspective(500px) scale(0.5);}
+.box li:nth-child(4):hover {transform:perspective(500px) scale(1.5);}
+.box li:nth-child(5):hover {box-shadow:0.5rem 0.5rem 0.5rem #333;}
+.box li:nth-child(6):hover {background-color:#acf;}
+.box li:nth-child(7):hover {transform:perspective(100px) rotateX(40deg);}
+.box li:nth-child(8):hover {transform:perspective(100px) rotateY(40deg);}
+.box li:nth-child(9):hover {transform:rotate(360deg);}
+.box li:nth-child(10):hover {opacity:0.3;}
+.box li:nth-child(11) {opacity:0.3;}
+.box li:nth-child(11):hover {opacity:1;}
+.box li:nth-child(12):hover {width:200px; height:50px; background-color:#acf;}
