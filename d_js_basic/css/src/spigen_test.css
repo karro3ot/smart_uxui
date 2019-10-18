@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#wrap {width:1920px; height:1825px;}
+
+#headBox {width:100%; height:937px; background-color:#acd;}
+#headBox > h1 {float:left; width:320px; height:100px; background-color:#fca; text-align:center; padding:15px; box-sizing:border-box; font-size:3.5rem;}
+#headBox > nav {float:left; width:1600px; height:100px; background-color:#ffd;}
+#headBox > nav > .about {float:left; margin-left:290px; width:160px; height:100px; background-color:#cac; text-align:center; font-size:1.5rem; padding:35px; box-sizing:border-box;}
+#headBox > nav > .careers {float:left; width:230px; height:100px; background-color:#cac; text-align:center; font-size:1.5rem; padding:35px; box-sizing:border-box;}
+#headBox > nav > .media {float:left; width:170px; height:100px; background-color:#cac; text-align:center; font-size:1.5rem; padding:35px; box-sizing:border-box;}
+#headBox > nav > .ir {float:left; width:170px; height:100px; background-color:#cac; text-align:center; font-size:1.5rem; padding:35px; box-sizing:border-box;}
+#headBox > nav > i {margin-left:485px; padding:25px; box-sizing:border-box; font-size:3rem;}
+
+#contentBox {width:100%; height:888px; background-color:#acc;}
+#contentBox > h2 {width:550px; height:470px; background-color:#ffe;}
