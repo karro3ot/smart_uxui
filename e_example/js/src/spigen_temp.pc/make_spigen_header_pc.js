@@ -1,4 +1,4 @@
-// make_spigen_main_pc
+// make_spigen_header_pc.js
 (function($){
   // 1. #gnb영역 내부에 있는 ul의 내용을 .side_gnb_area에 복사해서 붙여넣기
   // clone 메서드를 사용
@@ -27,8 +27,25 @@
     e.preventDefault();
     // sideGnb.css({'display':'block'});
     // sideGnb.show();
-    sideGnb.fadeIn(time/2);
+    sideGnb.stop().fadeIn(time/2, function(){
+      $(this).on('keyup', function(e){
+        // esc => 27
+        console.log(e.key);
+        
+        // 영문글자를 강제로 대/소문자로 치환하는 함수
+        // 대문자로 변환 toUpperCase()
+        // 소문자로 변환 toLowerCase()
+
+        /* if(e.keyCode == 27){
+          sideGnb.fadeOut(time);
+          openGnbBtn.focus();
+        } */
+      });
+    });
+
+    closeGnbBtn.focus();
   });
+
   closeGnbBtn.on('click', function(e){
     e.preventDefault();
     // sideGnb.css({'display':'none'});
@@ -55,12 +72,29 @@
   // a, button, form(input, textarea, select)
   
 
-    gnbTitleLink.on('focus', function(){
-      gnbDd.stop().slideDown();
-    });
+    gnbTitleLink.on('focus', addAction);
+    gnbListLink.on('blur', addAction)
+    gnbListLink.eq(-1).on('blur', removeAction);
 
-    gnbListLink.eq(-1).on('blur', function(){
-      gnbDd.stop().slideUp();
-    });
+// .side_gnb_area 내부의 마지막 a요소에서 blur 처리되면,
+// .close_gnb_btn 위치로 다시 focus 처리 되어라
+// 단, 전체 페이지에서 추가로 focus 처리되는 항목이 있어야 가능 
+
+const sideLink = sideGnbArea.find('a');
+const sideLastLink = sideLink.eq(-1);
+
+// $('h1').find('a').on('focus'); // focus가 잡히면
+// $('h1').find('a').focus(); // focus를 잡아라!
+
+sideLastLink.on('blur', function(){
+  closeGnbBtn.focus();
+});
+
+// ******** 문제있음 ============================================
+
+
+
+// .side_gnb_area 에서 키보드 esc 키를 누르면 빠져 나가고 이전의 위치로 돌아가라
+// -> .side_gnb_area가 보이는 곳에서 수행
 
 })(jQuery);
