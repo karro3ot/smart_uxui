@@ -36,10 +36,10 @@
         // 대문자로 변환 toUpperCase()
         // 소문자로 변환 toLowerCase()
 
-        /* if(e.keyCode == 27){
+         if(e.keyCode == 27){
           sideGnb.fadeOut(time);
           openGnbBtn.focus();
-        } */
+        } 
       });
     });
 
