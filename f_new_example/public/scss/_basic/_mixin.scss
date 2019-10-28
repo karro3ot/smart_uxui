@@ -1,4 +1,13 @@
 // mixin.scss
+// 숨기는 영역 처리하기
+@mixin hidden (){
+  display:block; position:absolute; z-index:-10; width:0; height:0; overflow:hidden;
+}
+
+
+
+
+
 // framework ========================================================
 
 // 내부에 있는 text 숨기는 기능 처리하기
