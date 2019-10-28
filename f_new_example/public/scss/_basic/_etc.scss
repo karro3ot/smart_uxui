@@ -9,6 +9,6 @@
 // width:30px; // pxrem(width,30)
 // height:40px; // pxrem(height,40)
 
-@mixin px($w, $r){
-  $w:$r+px;
-}
+// @mixin px($w, $r){
+//   $w:$r+px;
+// }
