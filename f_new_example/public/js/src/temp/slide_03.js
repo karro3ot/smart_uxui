@@ -5,7 +5,7 @@
   const slideGuide = slideForm.children('ul');
   let slideLi = slideGuide.find('li');
 
-  slideForm.css('overFlow', 'hidden');
+  // slideForm.css('overFlow', 'hidden');
 // ----------------------------------------------------------
 // li에 이름을 부여 (.slide_03_con_0$)
 for(let i = 0; i < slideLi.length; i++){
@@ -21,10 +21,10 @@ for(let i = 0; i < slideLi.length; i++){
 
   // 1. prepend, prependTo의 역할을 정확하게 구분
   /* 감싸는영역.prepend(담는내용);
-     담는내용.prependTo(감싸는영역) */
+     담는내용.prependTo(감싸는영역); */
 
   // 2. 마지막영역을 복제(clone)후에 앞에 담아라!
-  // 3. css작업시 nth-child()를 이용하여 이미지/기능을 담으면 순서값에 의해 원하는 결과물이 나오지 않으므로, 각각 class 이름을 부여하여 이미지/기능을             처리해라! (복제전에 이름을 부여!!!!!!!!!!!!!!!!!)
+  // 3. css작업시 nth-child()를 이용하여 이미지/기능을 담으면 순서값에 의해 원하는 결과물이 나오지 않으므로, 각각 class 이름을 부여하여 이미지/기능을 처리해라! (복제전에 이름을 부여!!!!!!!!!!!!!!!!!)
   // 4. 또한, 그 부모인 영역의 넓이는 기존갯수 + 1만큼의 크기값으로 재설정
 // -----------------------------------------------------------------------------
 const slide03Btn = $('.slide_03_btn');
@@ -39,14 +39,23 @@ console.log(bannerLen);
 nextBtn.on('click', function(e){
   e.preventDefault();
   myn++;
-  if(myn >= bannerLen-1){myn = 0;}
-  slideGuide.stop().animate({'left':-100 * myn + '%'});
+  if(myn >= bannerLen-1){
+    slideGuide.css({'left':'100%'});
+    myn = 0;}
+  let per = -100*myn + '%';
+  slideGuide.stop().animate({'left':per}, 1000);
 });
+
 prevBtn.on('click', function(e){
   e.preventDefault();
   myn--;
-  if(myn <= -1){myn = bannerLen-2;}
-  slideGuide.stop().animate({'left':-100 * myn + '%'});
+  let per = -100*myn + '%';
+  slideGuide.stop().animate({'left':per}, 1000, function(){
+    if(myn <= -1){myn = bannerLen-2;}
+    per = -100*myn + '%';
+    slideGuide.css({'left':per});
+  });
+  
 });
 
 })(jQuery);
