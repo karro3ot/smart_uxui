@@ -2,20 +2,18 @@
 (function($){
 // 이미지 경로, 이미지 파일 명
   const url = "../img/slide_01/";
-  let sample = {
-    title:'slide title_01',
-    content:'slide content.......',
-    linkTest:'바로가기',
-    link:'http://naver.com',
-    backgroundImage:'slide_01.jpg'};
+ 
+  let imgList;
 
-
-
-  const imgList = [ {title:'slide title_01', content:'slide content.......', linkTest:'첫번째 바로가기', link:'http://naver.com', bgimg:'slide_01.jpg'},
-    {title:'slide title_02', content:'slide content.......', linkTest:'두번째 바로가기', link:'http://daum.net', bgimg:'slide_02.jpg'}, 
-    {title:'slide title_03', content:'slide content.......', linkTest:'세번째 바로가기', link:'http://google.com', bgimg:'slide_03.jpg'}, 
-    {title:'slide title_04', content:'slide content.......', linkTest:'네번째 바로가기', link:'http://xidoweb.com', bgimg:'slide_04.jpg'}, 
-    {title:'slide title_05', content:'slide content.......', linkTest:'다섯번째 바로가기', link:'http://w3c.org', bgimg:'slide_05.jpg'}];
+  $.ajax({
+    async:false,
+    type:'GET',
+    url:'../data/slide_04.json',
+    dataType:'json',
+    error:function(){console.log('data error');},
+    success:function(data){return imgList = data;}
+  });
+  console.log(imgList);
 // ------------------------------------------------------------------------------------------------
 // 기본 선택자 및 내용(기본틀) 생성
 const slide_04 = $('#viewBox_04');
