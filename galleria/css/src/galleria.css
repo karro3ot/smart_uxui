@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* galleria.css */
+
+#wrap {position:relative; width:100%; min-width:960px; height:1932px;}
+
+#headBox > h1 {position:absolute; top:45px; left:640px; width:110px; height:60px; background-image:url("../../img/galleria_wlogo.png"); background-size:auto; background-repeat:no-repeat; background-position:100% 100%;}
+#headBox > nav > .menu_01 {position:absolute; top:30px; left:50px; width:70px; height:70px; background-color:#faf;}
+#headBox > nav > .menu_02 {position:absolute; top:30px; right:50px; width:70px; height:70px; background-color:#faf;}
+
+
+#contentBox {width:100%; min-width:960px; height:966px; background-image: url("../../img/galleria_bg.png"); background-size:auto; background-repeat:no-repeat; background-position:55% 0%;}
+#contentBox > .con_01 {padding-top:360px; padding-left:170px; width:265px; height:177px; font-size:2.5rem; color:#fff;}
+#contentBox > .con_02 {display:block; margin-left:170px; width:200px; height:45px; border:1px solid #fff;}
+#contentBox > .con_02 p {padding:10px; font-size:1.5rem; text-align:center; color:#fff;}
+
+#footBox {width:100%; min-width:960px; height:966px; background-color:#668;}
+#footBox > h2 {padding-top:140px; font-size:2rem; text-align:center; color:#fff;}
