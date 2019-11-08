@@ -1,6 +1,7 @@
-(function($){
-  const slide = $('#miniProduct');
-  const product = $('.product');
+// slide_plug_sample_01.js
+$.fn.mySlide = function(){
+  const slide = this;
+  const product = slide.find('.product');
   const productUl = product.find('ul');
   let productLi = productUl.find('li');
   
@@ -136,15 +137,15 @@ const ZIndexSlide = function(){
 }; // ZIndexSlide();
 
 // --------------------------------------------
-// product.css({overflow:'hidden'});
+product.css({overflow:'hidden'});
 // --------------------------------------------
-const slideList = {
-  basic : BasicSlide,
-  fade : ZIndexSlide,
-  horizon : HorizonSlide,
-  vertical : VerticalSlide
-};
+// 함수를 객체화 처리
+  return {
+    basic : BasicSlide,
+    fade : ZIndexSlide,
+    horizon : HorizonSlide,
+    vertical : VerticalSlide
+  };
 
-slideList.vertical();
-
-})(jQuery);
+// --------------------------------------------
+} // $.fn.mySlide
