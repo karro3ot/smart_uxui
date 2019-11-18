@@ -1,0 +1,44 @@
+/* join_check.css */
+
+body {background-color: #dfdfdf;}
+#wrap {width: 460px; height: auto; margin: auto;
+ overflow-x: hidden;}
+  #wrap > h2 {width: 100%; height: auto; margin-bottom: 1rem; text-align: center;}
+  form {width: 100%; height: auto;}
+  #wrap fieldset:first-of-type {width: 100%; height: auto; min-height: 50px;}
+
+  .check {width: 100%; height: auto; min-height: 50px; margin-bottom: 20px;}
+  .check:last-of-type {margin-bottom: 0;}
+
+  .all_check > p {text-decoration: underline;}
+  .all_check {position: relative; padding-left: 24px;}
+  .check > input {width: 0; height: 0; overflow: hidden; border: 0; position: absolute; z-index: -1; top: -50vw; left: -9999rem;}
+  .check.all_check i {position: absolute; top: 2px; left: 0; font-size: 1.6rem; color: #777;}
+  .check i {font-size: 1.2rem; cursor: pointer; color: #aaa;}
+  /* 전체 동의 체크시 -------------------------------------- */
+  .all_check > input:focus+p i {color: #333; text-shadow: 0.05rem 0.05rem 0 #08a600;}
+  .all_check > input:checked+p i {color: #08a600;}
+  /* --------------------------------------------------- */
+  /* 각각 동의 체크시 --------------------------------------- */
+  .check input:checked + dl i,
+  .check input:checked + p i {color: #08a600;}
+
+  .check > p {font-size: 1rem; font-weight: bold; text-decoration: underline; word-break: keep-all; letter-spacing: -0.05rem;}
+  .check > dl {width: 100%; height: auto; margin-bottom: 20px;}
+  .check > dl > dt {font-size: 1rem; font-weight: bold; text-decoration: underline; word-break: keep-all; letter-spacing: -0.05rem;}
+  .check > dl > dd {width: 100%; height: 90px; border: 1px solid #777; box-sizing: border-box; padding: 10px; overflow-x: hidden; overflow-y: auto; margin: 5px 0;}
+  .check strong {font-size: 0.875rem; font-weight: normal; color: #08a600;}
+  .check em {font-size: 0.875rem; font-weight: normal; color: #777; font-style: italic;}
+
+  /* -------------------------------------------------- */
+  #wrap fieldset:last-of-type {width: 100%; height: auto; min-height: 50px; margin-top: 30px;}
+  #wrap fieldset:last-of-type > input {width: 220px; height: 60px; color: #fff; font-size: 1.5rem; border: 0;}
+  input[type="reset"] {float: left; background-color: #555;}
+  input[type="submit"] {float: right; background-color: #08a600;}
+
+  input[type="reset"]:focus,
+  input[type="submit"]:focus {outline: 3px solid #333; font-weight: bold; text-decoration: underline; text-decoration-color: brown;}
+
+  #wrap fieldset:last-of-type > p {width: 100%; height: auto; clear: both; padding-top: 20px; font-size: 0.875rem; text-align: center;}
+
+/* ==================================================== */
