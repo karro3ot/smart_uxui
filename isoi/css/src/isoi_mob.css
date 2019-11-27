@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* isoi.css */
+
+#wrap {position: relative; width: 480px; min-width: 360px; height: 100%; background-color: #dfc;}
+
+/* headBox ============================================= */
+#headBox {width: 100%; height: 100px; background-color: #fff;}
+#headBox > h1 {position: absolute; top:10px; left:38%; width:100px; height:80px; background-image:url("../../img/isoi_logo.png"); background-size:contain; background-repeat:no-repeat; background-position:100% 100%; text-align: center;}
+#headBox > nav > .menu_01 {position:absolute; z-index:100; top:15px; left:20px; width:70px; height:70px;}
+#headBox > nav > .menu_01 > button {width: 100%; height: 100%; background-color: #fff; font-size:2.5rem; color:#64676c;}
+
+#headBox > nav > .menu_02 {position:absolute; z-index:100; top:15px; right:20px; width:70px; height:70px;}
+#headBox > nav > .menu_02 > button {width:100%; height: 100%; background-color: #fff; font-size: 2.5rem; color:#64676c;}
+
+/* viewBox_01 ============================================ */
+#viewBox_01 {position: relative; width: 100%; min-width: 360px; height: 700px; background-image: url("../../img/isoi_mob_bg.jpg"); background-size: auto; background-repeat: no-repeat; background-position: 45% 0;}
+
+#viewBox_01 > .view_01 {position: absolute; top: 10%; left:25%; width: 250px; height: 90px; font-size: 3rem; text-align: center; color:#fff;}
+#viewBox_01 > .view_02 {position: absolute; top: 27%; left:25%; width: 250px; height: 90px; font-size: 1.2rem; font-weight: lighter; text-align: center; color:#fff;}
+#viewBox_01 > .view_03 {position: absolute; top: 35%; left:38%; width: 125px; height: 90px; font-size: 1rem; font-weight: lighter; text-align: center;}
+#viewBox_01 > .view_03 > a {display: block; color: #fff;}
+
+#viewBox_01 > .view_04 {position: absolute; bottom: 15%; left:49%; width: 20px; height: 30px; background-image: url("../../img/mouse.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_01 > .view_05 {position: absolute; bottom: 9%; left: 30%; width: 195px; height: 23px; color: #fff; font-size: 1.3rem; text-align: center;}
+#viewBox_01 > .view_06 {position: absolute; bottom: 5%; left: 46.5%; width: 60px; height: 10px;}
+#viewBox_01 > .view_06 > button {float:left; width: 5px; height: 10px; background-color: transparent;}
+#viewBox_01 > .view_06 > #oval_01 {background-image: url("../../img/oval_white.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_01 > .view_06 > #oval_02 {background-image: url("../../img/oval_gray.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_01 > .view_06 > #oval_03 {background-image: url("../../img/oval_gray.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+
+/* #viewBox_02 ================================================ */
+#viewBox_02 {position: relative; width: 100%; height: 800px;}
+#viewBox_02 > h2 {position: absolute; top: 8%; left: 38%; width: 170px; height: 40px; font-size: 1.2rem;}
+
+#viewBox_02 > .bsBox_01 {position: absolute; top:15%; left:10%; width: 170px; height: 265px; text-align: center; background-image: url("../../img/best_01.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_02 > .bsBox_01 > a {display: block; width: 100%; height: 100%;}
+
+#viewBox_02 > .bsBox_02 {position: absolute; top:15%; left:55%; width: 170px; height: 265px; text-align: center; background-image: url("../../img/best_02.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_02 > .bsBox_02 > a {display: block; width: 100%; height: 100%;}
+
+#viewBox_02 > .bsBox_03 {position: absolute; top:52%; left:10%; width: 170px; height: 265px; text-align: center; background-image: url("../../img/best_03.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_02 > .bsBox_03 > a {display: block; width: 100%; height: 100%;}
+
+#viewBox_02 > .bsBox_04 {position: absolute; top:52%; left:55%; width: 170px; height: 265px; text-align: center; background-image: url("../../img/best_04.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#viewBox_02 > .bsBox_04 > a {display: block; width: 100%; height: 100%;}
+
+
+/* dt */
+#viewBox_02 dl > .dtBox {position: absolute; top:70%; left:9%; width: 140px; height: 40px;}
+
+/* dd */
+#viewBox_02 dl > .ddBox {position: absolute; top:95%; left:15%; width: 120px; height: 20px; font-size: small;}
+#viewBox_02 a {display: block; color: #000;}
+
+#viewBox_02 > .moreBox {position: absolute; top:90%; left:33%; width: 165px; height: 45px; background-color: #fff; border: 1px solid #aaa;}
+#viewBox_02 > .moreBox > a {display: block; text-align: center; font-size: 0.8rem; font-weight: lighter;}
+#viewBox_02 > .moreBox > a > p {padding: 10%; color: #000;}
+
+/* #conBox_01 ============================================= */
+#conBox_01 {position: relative; width: 100%; height: 1350px; background-color: #fff}
+#conBox_01 a {display: block; width: 100%; height: 100%; color:#595959; font-size: 1.5rem; text-align: center; padding: 14% 0; box-sizing: border-box;}
+#conBox_01 > .artBox_01 {width: 480px; height: 150px; background-image: url("../../img/isoi_01.jpg"); background-repeat: no-repeat; background-position: 10% 65%; background-size: cover;}
+#conBox_01 > .artBox_02 {width: 480px; height: 150px; background-image: url("../../img/isoi_02.jpg"); background-repeat: no-repeat; background-position: 20% 50%; background-size: cover;}
+
+/* subBox_01 */
+#conBox_01 > .subBox_01 {position: absolute; top:26%; left:14%; width: 350px; height: 505px;}
+#conBox_01 > .subBox_01 > h2 {margin-bottom: 24px; text-align: center; font-size: 1.2rem; font-weight: lighter;}
+#conBox_01 > .subBox_01 > h2 > span {font-size: 1.8rem; font-weight: bolder;}
+#conBox_01 > .subBox_01 > .imgBox {width: 100%; height: 232px; background-image: url("../../img/isoi_mob_img.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .subBox_01 > dl {margin-top: 30px; text-align: center;}
+#conBox_01 > .subBox_01 > dl > dt {font-size: 1.5rem;}
+#conBox_01 > .subBox_01 > dl > dd {margin-top: 17px; font-size: 0.9rem; font-weight: lighter;}
+
+/* insBox */
+#conBox_01 > .insBox {position: absolute; top: 65%; left: 4%; width: 445px; height: 384px;}
+#conBox_01 > .insBox > dl {text-align: center;}
+#conBox_01 > .insBox > dl > dt {font-size: 1.5rem;}
+#conBox_01 > .insBox > dl > dd {margin-top: 10px; font-size: 0.9rem; font-weight: lighter;}
+
+#conBox_01 > .insBox > div {float: left; width: 145px; height: 145px;}
+#conBox_01 > .insBox > .ins_01 {margin-top: 40px; margin-right: 5px; background-image: url("../../img/insta_01.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .insBox > .ins_02 {margin-top: 40px; margin-right: 5px; background-image: url("../../img/insta_02.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .insBox > .ins_03 {margin-top: 40px; background-image: url("../../img/insta_03.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .insBox > .ins_04 {margin-top: 5px; margin-right: 5px; background-image: url("../../img/insta_04.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .insBox > .ins_05 {margin-top: 5px; margin-right: 5px; background-image: url("../../img/insta_05.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_01 > .insBox > .ins_06 {margin-top: 5px; background-image: url("../../img/insta_06.jpg"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+
+/* conBox_02 ============================================= */
+#conBox_02 {width: 100%; height: 200px; background-image: url("../../img/meadowfoam.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#conBox_02 > dl {text-align: center; color:#fff; padding: 13%; box-sizing: border-box;}
+#conBox_02 > dl > dt {font-size: 1.5rem; font-weight: bolder;}
+#conBox_02 > dl > dd {margin-top: 10px; font-size: 1rem; font-weight: lighter;}
+
+/* #footBox ============================================== */
+#footBox {position: relative; width: 100%; height: 500px; background-color: #262525;}
+#footBox > .infoBox {width: 100%; height: 50px; background-color: #424040;}
+#footBox > .infoBox > p {position: relative; float: left; margin-left: 2px;}
+#footBox > .infoBox > p::before {content:" "; display: block; position: absolute; top: 40%; left:0; width: 1px; height: 25%; background-color: #bbbbbb;}
+#footBox > .infoBox > p:first-of-type:before {display: none;}
+#footBox > .infoBox > p:first-of-type {margin-left: 0;}
+#footBox > .infoBox > p > a {display: block; padding: 18px 27px 0; width: auto; height: 30px; text-align: center; font-size: 0.9rem; font-weight: lighter; color: #bbbbbb;}
+
+#footBox > h2 {position: absolute; top: 15%; left:40%; width: 100px; height: 60px; background-image: url("../../img/isoi_logo_white.png"); background-repeat: no-repeat; background-position: 0 0; background-size: contain;}
+#footBox > h2 > a {display: block; width: 100%; height: 100%;}
+
+#footBox > .info_01 > dl {position: absolute; top:33%; left:15%; width: 340px; height: 145px; text-align: center;}
+#footBox > .info_01 dd {margin-top: 30px; font-size: 0.9rem; font-weight: lighter; color:#B9B9B9; line-height: 1.2rem;}
+#footBox > .info_02 > dl {position: absolute; top: 70%; left: 30%; width: 195px; height: 87px; text-align: center;}
+#footBox > .info_02 dd {margin-top: 30px; font-size: 1.7rem; font-weight: bolder; color:#B9B9B9;}
+
+#footBox dt {font-size: 1.3rem; color:#fff;}
